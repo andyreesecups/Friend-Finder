@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Friend Finder</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="jumbotron">
+            <h1>Answer these questions and then find a friend!</h1>
+            <br>
+            <hr>
+            <form method="POST" action="/api/friends">
+                <h3><strong>About You</strong></h3>
+                <fieldset class="form-group">
+                    <label for="name">Name (Required)</label>
+                    <input type="text" class="form-control" placeholder="Your Name" id="name" name="name" required>
+                </fieldset>
+                <fieldset class="form-group">
+                    <label for="photo">Link to Photo Image (Required)</label>
+                    <input type="text" class="form-control" placeholder="images.png" id="photo" name="photo" required>
+                </fieldset>
+                <hr>
+                <h3><strong>Question 1</strong></h3>
+                <fieldset class="form-group">
+                    <label for="question01">Loddy doddy we likes to party.</label>
+                    <br>
+                    <div class="col-md-4">
+                        <select class="form-control" id="question01" name="#">
+                            <option>1 (Strongly Disagree)</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5 (Strongly Agree)</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <h3><strong>Question 2</strong></h3>
+                <fieldset class="form-group">
+                    <label for="question02">I like seafood.</label>
+                    <br>
+                    <div class="col-md-4">
+                        <select class="form-control" id="question02" name="#">
+                            <option>1 (Strongly Disagree)</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5 (Strongly Agree)</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <h3><strong>Question 3</strong></h3>
+                <fieldset class="form-group">
+                    <label for="question03">I don't like sushi.</label>
+                    <br>
+                    <div class="col-md-4">
+                        <select class="form-control" id="question03" name="#">
+                            <option>1 (Strongly Disagree)</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5 (Strongly Agree)</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <h3><strong>Question 4</strong></h3>
+                <fieldset class="form-group">
+                    <label for="question04">I love Game of Thrones.</label>
+                    <br>
+                    <div class="col-md-4">
+                        <select class="form-control" id="question04" name="#" ">
+                        <option>1 (Strongly Disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly Agree)</option>
+                    </select>
+                </div>
+            </fieldset>
+            <h3><strong>Question 5</strong></h3>
+            <fieldset class="form-group ">
+                <label for="question05 ">I like to exercise.</label>
+                <br>
+                <div class="col-md-4 ">
+                    <select class="form-control " id="question05 " name="#">
+                        <option>1 (Strongly Disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly Agree)</option>
+                    </select>
+                </div>
+            </fieldset>
+            <h3><strong>Question 6</strong></h3>
+            <fieldset class="form-group ">
+                <label for="question06 ">I am a vegetarian.</label>
+                <br>
+                <div class="col-md-4 ">
+                    <select class="form-control " id="question06 " name="#">
+                        <option>1 (Strongly Disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly Agree)</option>
+                    </select>
+                </div>
+            </fieldset>
+            <h3><strong>Question 7</strong></h3>
+            <fieldset class="form-group ">
+                <label for="question07 ">I like Spiderman over Batman.</label>
+                <br>
+                <div class="col-md-4 ">
+                    <select class="form-control " id="question07 " name="#">
+                        <option>1 (Strongly Disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly Agree)</option>
+                    </select>
+                </div>
+            </fieldset>
+            <h3><strong>Question 8</strong></h3>
+            <fieldset class="form-group ">
+                <label for="question08 ">I like Horror movies.</label>
+                <br>
+                <div class="col-md-4 ">
+                    <select class="form-control " id="question08 " name="#">
+                        <option>1 (Strongly Disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly Agree)</option>
+                    </select>
+                </div>
+            </fieldset>
+            <h3><strong>Question 9</strong></h3>
+            <fieldset class="form-group ">
+                <label for="question09 ">I'm a morning person!</label>
+                <br>
+                <div class="col-md-4 ">
+                    <select class="form-control " id="question09 " name="scores[8] ">
+                        <option>1 (Strongly Disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly Agree)</option>
+                    </select>
+                </div>
+            </fieldset>
+            <h3><strong>Question 10</strong></h3>
+            <fieldset class="form-group ">
+                <label for="question10 ">I am a Spurs Fan.</label>
+                <br>
+                <div class="col-md-4 ">
+                    <select class="form-control " id="question10 " name="#">
+                        <option>1 (Strongly Disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly Agree)</option>
+                    </select>
+                </div>
+            </fieldset><br>
+            <input type="submit " class="btn btn-primary " value="Request Friend " id="submit ">
+        </form>
+    </div>
+    <hr>
+    <a href="/api/friends">API Friends List</a> | <a href="https://github.com/andyreesecups/Friend-Finder " target="_blank ">GitHub Repo</a>
+</div>
+
+</body>
+
+</html>
