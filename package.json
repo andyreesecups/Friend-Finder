@@ -1,0 +1,22 @@
+{
+  "name": "friend-finder",
+  "version": "1.0.0",
+  "description": "find your friends",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andyreesecups/Friend-Finder.git"
+  },
+  "keywords": [
+    "friends"
+  ],
+  "author": "andrew reese",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andyreesecups/Friend-Finder/issues"
+  },
+  "homepage": "https://github.com/andyreesecups/Friend-Finder#readme"
+}
